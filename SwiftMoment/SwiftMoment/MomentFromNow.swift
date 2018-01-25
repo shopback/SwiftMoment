@@ -126,8 +126,8 @@ extension Moment {
         if let languageBundle = getLanguageBundle(bundle) {
             return languageBundle.localizedString(forKey: key, value: "", table: "NSDateTimeAgo")
         }
-
-        return ""
+        
+        return bundle.localizedString(forKey: key, value: "", table: "NSDateTimeAgo")
     }
 
     private func getLanguageBundle(_ bundle: Bundle) -> Bundle? {
