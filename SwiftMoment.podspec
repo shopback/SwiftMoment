@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/akosma/SwiftMoment.git", :tag => "v0.7" }
   s.source_files  = "SwiftMoment/SwiftMoment"
   s.resource     = "SwiftMoment/SwiftMoment/MomentFromNow.bundle"
+  s.swift_version = '5.0'
 end
